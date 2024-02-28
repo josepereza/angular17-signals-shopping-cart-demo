@@ -4,7 +4,7 @@ import { MatCardModule } from "@angular/material/card";
 import {MatInputModule} from "@angular/material/input";
 import {Product} from "../../../shared/models/product.model";
 import {FormsModule} from "@angular/forms";
-import {CurrencyPipe} from "@angular/common";
+import {CurrencyPipe, NgOptimizedImage} from "@angular/common";
 import {CartService} from "../../../shared/services/cart.service";
 import {CartItem} from "../../../shared/models/cart-item.model";
 
@@ -16,7 +16,8 @@ import {CartItem} from "../../../shared/models/cart-item.model";
     MatCardModule,
     MatInputModule,
     FormsModule,
-    CurrencyPipe
+    CurrencyPipe,
+    NgOptimizedImage
   ],
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.scss'

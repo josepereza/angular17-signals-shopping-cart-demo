@@ -1,4 +1,4 @@
-import {computed, Injectable, signal, effect} from '@angular/core';
+import {Injectable, signal, effect} from '@angular/core';
 import {CartItem} from "../models/cart-item.model";
 import {Product} from "../models/product.model";
 
