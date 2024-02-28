@@ -1,0 +1,17 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  &:focus {
+    color: white;
+  }
+}
+
+.cart-count {
+  font-size: .75rem;
+}

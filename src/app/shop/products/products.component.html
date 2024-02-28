@@ -1,0 +1,8 @@
+<div class="container products-container">
+  <h1 class="product-header">Products</h1>
+  @for (product of products; track product.id) {
+    <div class="product-card-container">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
+  }
+</div>

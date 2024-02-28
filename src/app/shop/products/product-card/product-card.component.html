@@ -1,0 +1,18 @@
+<mat-card class="product-card">
+  <mat-card-header>
+    <mat-card-title class="product-title">{{ product.name }}</mat-card-title>
+    <mat-card-subtitle>{{ product.price | currency }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{ product.imageUrl }}" alt="{{ product.name }}">
+  <mat-card-actions class="product-actions">
+    <input matInput class="cart-quantity" type="number" [(ngModel)]="quantity" min="0">
+    <div class="cart-buttons">
+      @if (!isInCart()) {
+        <button mat-raised-button color="primary" (click)="addToCart()">Add to cart</button>
+      } @else {
+        <button mat-raised-button color="primary" (click)="updateCartQuantity()">Update</button>
+        <button mat-raised-button color="warn" (click)="removeFromCart()">Remove</button>
+      }
+    </div>
+  </mat-card-actions>
+</mat-card>

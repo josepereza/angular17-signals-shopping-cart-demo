@@ -1,0 +1,16 @@
+.cart-item-thumbnail {
+  height: 5rem;
+  width: 5rem;
+}
+
+.cart-item {
+  margin-bottom: 1rem;
+  background: #303030;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-button {
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.product-card {
+  width: 300px;
+}
+
+.product-title {
+  color: white;
+}
+
+.cart-quantity {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: .5rem;
+}
+
+.product-actions {
+  flex-direction: column;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 1rem;
+  button {
+    width: 8rem;
+  }
+}
